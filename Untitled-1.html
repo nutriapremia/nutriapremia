@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutriapremia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #00bcd4;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #00bcd4;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+      width: 100%;
+    }
+    .advertencia, .terminos {
+      margin-top: 2rem;
+      background-color: #f1f1f1;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .logo img {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nutriapremia</h1>
+  </header>
+  <main>
+    <div class="logo">
+      <img src="logo-nutria.png" alt="Logo Nutriapremia">
+    </div>
+    <form id="boletosForm" method="POST" action="https://formsubmit.co/andrebarzallosares2@gmail.com">
+      <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="cantidad">Cantidad de boletos (2-40):</label>
+      <select id="cantidad" name="cantidad" required>
+        <option value="">Selecciona...</option>
+        <!-- Opciones generadas con JavaScript -->
+      </select>
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" pattern="[a-zA-ZÁÉÍÓÚÑáéíóúñ ]{4,}" required>
+
+      <label for="cedula">Cédula (10 dígitos):</label>
+      <input type="text" id="cedula" name="cedula" pattern="\d{10}" required>
+
+      <label for="celular">Celular (10 dígitos):</label>
+      <input type="text" id="celular" name="celular" pattern="\d{10}" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="sugerencia">Buzón de sugerencia (máximo 100 palabras):</label>
+      <textarea id="sugerencia" name="sugerencia" maxlength="700"></textarea>
+
+      <div class="advertencia">
+        Luego de realizar el pago guarda una captura del mismo. Ante cualquier inconveniente comunícate con nosotros al correo: <strong>[correo aquí]</strong> o envíanos un mensaje a nuestro WhatsApp: <strong>[número aquí]</strong>.
+      </div>
+
+      <button type="submit">Pagar ahora</button>
+    </form>
+
+    <div class="terminos">
+      <h3>Términos y restricciones</h3>
+      <ul>
+        <li>TERMINO Y RESTRICCIÓN 1</li>
+        <li>TERMINO Y RESTRICCIÓN 2</li>
+        <li>TERMINO Y RESTRICCIÓN 3</li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    const links = {
+      2: "https://payp.page.link/JXGZ3",
+      3: "https://payp.page.link/FqVeb",
+      4: "https://payp.page.link/4paZH",
+      5: "https://payp.page.link/BrmQV",
+      6: "https://payp.page.link/T3vqQ",
+      7: "https://payp.page.link/UYzoH",
+      8: "https://payp.page.link/kKuWL",
+      9: "https://payp.page.link/D7Ex3",
+      10: "https://payp.page.link/BfGS3",
+      11: "https://payp.page.link/yZvkf",
+      12: "https://payp.page.link/xb9t6",
+      13: "https://payp.page.link/8gvyz",
+      14: "https://payp.page.link/N2tck",
+      15: "https://payp.page.link/EyxG1",
+      16: "https://payp.page.link/CwF8R",
+      17: "https://payp.page.link/8ydjS",
+      18: "https://payp.page.link/VJCHN",
+      19: "https://payp.page.link/qkSJj",
+      20: "https://payp.page.link/LpDh7",
+      21: "https://payp.page.link/gNoKw",
+      22: "https://payp.page.link/zkGLM",
+      23: "https://payp.page.link/hyzZX",
+      24: "https://payp.page.link/dey6y",
+      25: "https://payp.page.link/tsQjM",
+      26: "https://payp.page.link/K6hfi",
+      27: "https://payp.page.link/3KfaF",
+      28: "https://payp.page.link/14ZFz",
+      29: "https://payp.page.link/5tN9U",
+      30: "https://payp.page.link/5tN9U",
+      31: "https://payp.page.link/VovZs",
+      32: "https://payp.page.link/Y8Vcd",
+      33: "https://payp.page.link/Y8Vcd",
+      34: "https://payp.page.link/b6Z2k",
+      35: "https://payp.page.link/PxVnk",
+      36: "https://payp.page.link/gT9zH",
+      37: "https://payp.page.link/PYypi",
+      38: "https://payp.page.link/AE4ok",
+      39: "https://payp.page.link/D8K1E",
+      40: "https://payp.page.link/EEotV"
+    };
+
+    const select = document.getElementById("cantidad");
+    for (let i = 2; i <= 40; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.textContent = i;
+      select.appendChild(option);
+    }
+
+    document.getElementById('boletosForm').addEventListener('submit', function(e) {
+      const cantidad = parseInt(document.getElementById('cantidad').value);
+      if (links[cantidad]) {
+        window.open(links[cantidad], '_blank');
+      }
+    });
+  </script>
+</body>
+</html>
